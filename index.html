@@ -1,3 +1,6 @@
+<!--Name: Sebastien Watt
+    Date: 3/8/2022
+    -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,43 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <style>
-      /*This is to align the text to the center of the screen, underline and color the underline of the text. Its also used to Color the text  */
-      h1 {
-        text-align: center;
-        text-decoration-line: underline;
-        text-decoration-color: gray;
-        color: azure;
-      }
-      /*This is used to make a header. The background will be a picture of a galaxy and stars in that galaxy, the image wont repeat in a bunch of small photos.
-        to make sure the entire content is covered i set the backgroud-attachment to fixed and to make sure it wasn't streched i changed the size of
-        the background to 100%, 100%. Code is referenced from https://www.w3schools.com/css/css_website_layout.asp*/
-      header {
-        text-align: center;
-        padding: 20px;
-        background-image: url("images/galaxyBackground.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-      }
-      .topnav {
-        overflow: hidden;
-        background-color: black;
-      }
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      /*When your hovering over the box it changed colors*/
-      .topnav a:hover {
-        background-color: azure;
-        color: black;
-      }
-    </style>
+    <!--This is a reference to the Styles page that has all the designs and saves room-->
+    <link rel="stlylesheet" href="styles.css" />
   </head>
   <body>
     <!--This is used to refer back to the header class for the top of the screen for my title-->
@@ -49,32 +17,38 @@
       <!--Text inside that box-->
       <h1>Super Mario Galaxy</h1>
     </header>
-    <div class="topnav">
+    <!--Refers to the nav code from the CSS code-->
+    <nav>
+      <!--Makes a box and a link to the tutorials page-->
       <a href="gameplay.html">Tutorials</a>
-    </div>
-    <p>
-      Super Mario Galaxy was released in 2007 to the Wii. It was the third 3D
-      game in Nintendo's Super Mario series. The game is set in out spcae, where
-      Mario travels to different galaxies and planets to collect Power Stars by
-      defeating enemys and completing quests. Can you save the universe from
-      Bowser and rescue Princess Peach? Or will the Galaxy Remain without a hero
-      forever?
-    </p>
-
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/rmN8DHZYNCg"
-      title="Super Mario Galaxy Trailer"
-      allow="autoplay"
-      allowfullscreen
-    ></iframe
-    ><br />
-    <img
-      src="images/Mario Soaring.jpg"
-      alt="Soaring"
-      width="500px"
-      height="500px"
-    />
+    </nav>
+    <main>
+      <p>
+        Super Mario Galaxy was released in 2007 to the Wii. It was the third 3D
+        game in Nintendo's <em>Super Mario</em> series. The game is set in out
+        space, where Mario travels to different galaxies and planets to collect
+        <u>Power Stars</u> by defeating enemys and completing quests. Can you
+        save the universe from <strong>Bowser</strong> and rescue
+        <strong>Princess Peach</strong>? Or will the Galaxy Remain without a
+        hero forever?
+      </p>
+      <!-- This is a iframe to a youtube video with no border that allows autoplay and fullscreen-->
+      <iframe
+        src="https://www.youtube.com/embed/rmN8DHZYNCg"
+        style="border: none; align-self: auto"
+        width="560"
+        height="315"
+        title="Super Mario Galaxy Trailer"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe
+      ><br />
+      <img
+        src="images/Mario Soaring.jpg"
+        alt="Soaring"
+        width="500px"
+        height="500px"
+      />
+    </main>
   </body>
 </html>

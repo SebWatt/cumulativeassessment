@@ -1,0 +1,42 @@
+/*This is to align the text to the center,underline and color the underline of the text and the text its self.*/
+h1 {
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: gray;
+  color: azure;
+}
+/*This is used to make a header. The background will be a picture of a galaxy and stars in that galaxy, the image wont repeat in a bunch of small photos.
+to make sure the entire content is covered i set the backgroud-attachment to fixed and to make sure it wasn't streched i changed the size of
+the background to 100%, 100%. Code is referenced from https://www.w3schools.com/css/css_website_layout.asp*/
+header {
+  text-align: center;
+  padding: 20px;
+  background-image: url("images/galaxyBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/*This is to color the nav bar black, when you click on it, it takes you to a different part of the website,
+when you haver over the nav it changes colors. Code is referenced from https://www.w3schools.com/css/css_website_layout.asp*/
+nav {
+  overflow: hidden;
+  background-color: black;
+}
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+/*When your hovering over the box it changed colors*/
+nav a:hover {
+  background-color: azure;
+  color: black;
+}
+/*Changes the background to a light grey instead of white*/
+body {
+  background-color: lightgrey;
+}
