@@ -2,7 +2,7 @@
     Course:Software Development 20S
     Teacher: Mr. Hardman
     School: Pembina Trails Early College
-    Date Last Modified: 3/10/2022
+    Date Last Modified: 3/15/2022
     -->
 <!DOCTYPE html>
 <html lang="en">
@@ -61,13 +61,13 @@
         <h3>Playable</h3>
         <p>Choose your favorite playable charater:</p>
         <form>
-          <!--The is refenced from https://www.w3schools.com/html/html_form_attributes.asp-->
           <p>This is for a school project, the username and password are not secure </p>
-          <label for ="usern">Username:</label>
-          <input type="text" id="usern" name="username" minlength="3" maxlength="32" required></br></br>
-          <label for ="passw">Password:</label>
-          <input type="text" id="passw" name="password" minlength="8" maxlength="32" required></br>
-          <!--Who is your favorite Charater: Mario or Luigi. This is refenced from-->
+          <!--This is to get a First and a Last name from the user it is referenced from https://www.w3schools.com/html/html_form_attributes.asp-->
+          <label for ="fname">First name:</label>
+          <input type="text" id="usern" name="username" minlength="1" maxlength="32" required></br></br>
+          <label for ="lname">Last name:</label>
+          <input type="text" id="lname" name="password" minlength="1" maxlength="32" required></br>
+          <!--Who is your favorite Charater: Mario or Luigi. This is refenced from https://www.w3schools.com/html/html_forms.asp-->
           <input type="radio" id="play-mario" name="fav-playable" value="Mario" />
           <label for="play-mario">Mario</label><br />
           <input type="radio" id="play-luigi" name="fav-playable" value="Luigi" />
@@ -76,7 +76,7 @@
         <p>
           Choose your top three favorite supporting charaters: (<strong>Choose Three Max</strong>)
         </p>
-          <!--Checkbox for picking Princess Peach-->
+          <!--Checkbox for picking Princess Peach. This and the rest of the checkboxs are refenced from https://www.w3schools.com/html/html_forms.asp-->
           <input
             type="checkbox"
             id="support-peach"
@@ -139,50 +139,55 @@
             name="fav-support"
             value="Bees"/>
           <label for="support-bees">Bees</label><br />
-          <input type="submit">
+          <p>What was your song is this game?</p>
+          <!--This is a Number box for how many stars did you get while you played the game. The Maximum is 121 stars-->
+          <lebel for="favsong">Your favorite song:</lebel>
+          <input type="url" id="favsong" name="favsong"></br></br>
+          <input type="submit" value="Submit" >
         </form>
       </fieldset>
     </section>
-  <section>
-    <fieldset>
-      <legend style ="font-size: 32px;"<b>Favorite Bosses</b></legend>
-      <h3>Bosses</h3>
-      <img src = "images/bossFightGIF.gif" alt = "Mario fighting Bouldergeist" width="500"height="500"/>
-      <table>
-        <tr>
-          <th>Boss Name</th>
-          <th>Galaxy</th>
-          <th>Fun</th>
-        </tr>
-        <tr> 
-          <th>Kingfin</th> 
-          <th>BoneFin Galaxy</th> 
-          <th>7/10</th> 
-        </tr>
-        <tr> 
-          <th>Bouldergeist</th> 
-          <th>Ghostly Galaxy</th> 
-          <th>7.5/10</th> 
-        </tr> 
-        <tr> 
-          <th>Dino Piranha</th> 
-          <th>Good Egg Galaxy</th> 
-          <th>8.5/10</th> 
-        </tr> 
-        <tr> 
-          <th>Major Burrows</th> 
-          <th>Gusty Garden Galaxy</th> 
-          <th>9.5/10</th> 
-        </tr>
-        <tr>
-          <th>Bowser</th> 
-          <th>Bowser's Galaxy Reactor</th> 
-          <th>10/10</th>
-        </tr> 
-      </table>
-    </fieldset>
-  </section>
-    
-  
+    <section>
+      <fieldset>
+        <legend style ="font-size: 32px;"><b>Favorite Bosses</b></legend>
+        <h3>Bosses</h3>
+        <!--The image is a GIF loop for Bouldergeist which is the second boss on the table-->
+        <img src = "images/bossFightGIF.gif" alt = "Mario fighting Bouldergeist" width="500"height="500"/>
+        <table>
+          <!--Creates a Table for the bosses. One category is the Boss name, one is the galaxy its on, and the last category is how fun overall is the boss-->
+          <tr>
+            <th><b>Boss Name</b></th>
+            <th><b>Galaxy</b></th>
+            <th><b>Fun</b></th>
+          </tr>
+          <tr> 
+            <th>Kingfin</th> 
+            <th>BoneFin Galaxy</th> 
+            <th>7/10</th> 
+          </tr>
+          <tr> 
+            <th>Bouldergeist</th> 
+            <th>Ghostly Galaxy</th> 
+            <th>7.5/10</th> 
+          </tr> 
+          <tr> 
+            <th>Dino Piranha</th> 
+            <th>Good Egg Galaxy</th> 
+            <th>8.5/10</th> 
+          </tr> 
+          <tr> 
+            <th>Major Burrows</th> 
+            <th>Gusty Garden Galaxy</th> 
+            <th>9.5/10</th> 
+          </tr>
+          <tr>
+            <th>Bowser</th> 
+            <th>Bowser's Galaxy Reactor</th> 
+            <th>10/10</th>
+          </tr> 
+        </table>
+      </fieldset>
+    </section>
+
   </body>
 </html>
